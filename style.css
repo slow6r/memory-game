@@ -123,6 +123,29 @@ h1 {
     text-align: center;
 }
 
+@media only screen and (max-width: 600px) {
+    .game-card, .game-card-img {
+        width: 4em;
+        height: 4em;
+    }
+    
+    .restart-btn {
+        font-size: 1.2em;
+    }
+}
+
+/* Изменение расположения элементов для мобильных устройств */
+@media only screen and (max-width: 600px) {
+    .game-status-details {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .restart-button-div {
+        text-align: center;
+    }
+}
+
 .rating,
 .move-counter,
 .timer,
@@ -171,8 +194,8 @@ h1 {
 }
 
 .game-card {
-    width: 6.5em;
-    height: 6.5em;
+    width: 4.5em;
+    height: 4.5em;
     background-color: #212121;
     border-radius: 0.3em;
     margin: 0.8em;
@@ -183,8 +206,8 @@ h1 {
 .game-card-img {
     visibility: hidden;
     object-fit: cover;
-    width: 6.5em;
-    height: 6.5em;
+    width: 4.5em;
+    height: 4.5em;
 }
 
 .restart-button-div {
